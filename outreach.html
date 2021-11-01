@@ -11,24 +11,25 @@
     <meta name="keywords" content="High Energy Astrophysics Brno Czech Republic Physics Theoretical Physics Cosmology AGN Machine Learning">
 
     <!-- Bootstrap Core CSS -->
-    <link rel="stylesheet" href="./css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
 
     <!-- Custom Fonts -->
-    <link href="./css/css" rel="stylesheet" type="text/css">
-    <link href="./css/css(1)" rel="stylesheet" type="text/css">
+    <link href="css/css" rel="stylesheet" type="text/css">
+    <link href="css/css1" rel="stylesheet" type="text/css">
 
-    <link rel="stylesheet" media="all" href="./fontawesome-free-5.15.2-web/css/all.css" type="text/css">
+    <link rel="stylesheet" media="all" href="fontawesome-free-5.15.2-web/css/all.css" type="text/css">
     <link media="all" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <link rel="stylesheet" media="all" href="css/style.css" type="text/css">
 
     <!-- Plugin CSS -->
     <!--link rel="stylesheet" href="./css/animate.min.css" type="text/css"-->
-    <link href="./css/contact-form.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/contact-form.css" type="text/css">
 
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="./css/main.css" type="text/css">
-    <link rel="stylesheet" href="./css/clean.css" type="text/css">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <link rel="stylesheet" href="css/clean.css" type="text/css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -36,9 +37,6 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
-    <!-- Recaptcha for the form-->
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=REPLACE THIS WITH THE GOOGLE ANALYTICS TAG"></script>
@@ -55,7 +53,7 @@
 </head>
 
 <body id="page-top">
-    <nav class="navbar navbar-dark bg-dark navbar-fixed-top affix-top">
+    <nav class="navbar navbar-dark bg-primary navbar-fixed-top affix-top">
         <!--nav id="mainNav" class="navbar navbar-default navbar-fixed-top affix-top"-->
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -66,27 +64,21 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <!--li class="">
-                        <a class="page-scroll" href="#aboutus">About Us</a>
-                    </li-->
                     <li class="">
-                        <a class="page-scroll" href="#research">Research</a>
+                        <a href="../index.html#aboutus">About Us</a>
                     </li>
                     <li class="">
-                        <a class="page-scroll" href="#team">Team</a>
+                        <a href="../index.html#research">Research</a>
+                    </li>
+                    <li>
+                        <a href="../team.html">Team</a>
+                    </li>
+                    <li>
+                        <a href="../index.html#publications">Publications</a>
                     </li>
                     <li class="">
-                        <a href="../hea/team.html">Team2</a>
+                        <a href="../outreach.html">Outreach</a>
                     </li>
-                    <li class="">
-                        <a class="page-scroll" href="#funding">Funding</a>
-                    </li>
-                    <li class="">
-                        <a class="page-scroll" href="#publications">Publications</a>
-                    </li>
-                    <li class="">
-                        <a href="../hea/outreach.html">Outreach</a>
-                        </li-->
                     <li class="">
                         <a class="page-scroll" href="#contact">Contact Us</a>
                     </li>
@@ -96,7 +88,6 @@
         </div>
         <!-- /.container-fluid -->
     </nav>
-
 
 
 
@@ -115,22 +106,22 @@
                 <hr class="primary">
                 <!--/div>
             <div class="justify-content-center"-->
-                <div class="col-4">
+                <div class="text-center">
                     <!---lg-5 col-md-8 text-center-->
-                    <div class="info">
-                        <p> High Energy Astrophysics Group<br>Department of Theoretical Physics and Astrophysics </p>
-                        <p>
-                        </p>
-                        <i class="fa fa-map-marker"></i>
-                        <p> Kotlářská 2, 602 00, Brno<br>Czech Republic </p>
-                    </div>
+                    <!--div class="info"-->
+                    <p> High Energy Astrophysics Group<br>Department of Theoretical Physics and Astrophysics </p>
+                    <p>
+                    </p>
+                    <i class="fa fa-map-marker"></i>
+                    <p> Kotlářská 2, 602 00, Brno<br>Czech Republic </p>
                 </div>
-                <div class="col-6">
-                    <!--lg-6 col-md-8 text-center-->
+            </div>
+            <!--div class="col-6">
+                    <lg-6 col-md-8 text-center>
                     <div class=" form">
-                        <!--div id="sendmessage">Your message has been sent. Thank you!</div-->
+                        <!--div id="sendmessage">Your message has been sent. Thank you!</div>
                         <div id="errormessage"></div>
-                        <form role="form" class="contactForm" method="POST" action="contact-form-process.php">
+                        <form role="form" class="contactForm" method="post" action="contact-form-process.php">
                             <div class="form-group">
                                 <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
                                 <div class="validation"></div>
@@ -147,16 +138,14 @@
                                 <textarea class="form-control" name="message" rows="5" maxlength="3000" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
                                 <div class="validation"></div>
                             </div>
-                            <div class="text-center g-recaptcha" data-sitekey="your_site_key">
-                                <button type="submit" onclick="show_alert();">Send Message</button>
-                            </div>
+                            <div class="text-center"><button type="submit" onclick="show_alert();">Send Message</button></div>
                         </form>
                         <p>
 
                         </p>
                     </div>
-                </div>
-            </div>
+                </div-->
+        </div>
         </div>
     </section>
 
