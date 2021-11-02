@@ -5,7 +5,9 @@ body {
 }
 
 body {
-    font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif
+    /* font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif */
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 190%;
 }
 
 hr {
@@ -50,11 +52,11 @@ p {
 }
 
 .bg-primary {
-    background-color: #085363
+    background-color: #085263
 }
 
 .bg-secondary {
-    background-color: #d1d1d1;
+    background-color: #ffffff;
 }
 
 .bg-dark {
@@ -478,6 +480,9 @@ body {
     -webkit-tap-highlight-color: #222
 }
 
+
+ /* TOMAS */
+
 #principalinvestigator {
     scroll-margin-top: 80px;
 }
@@ -514,19 +519,49 @@ body {
     border-radius: 50%;
     display: block;
     margin: 0 auto;
-    /* top: 50%; */
-    /* left: 50%; */
     transition: box-shadow 0.25s;
 }
 
-.personal_image:hover {
-    box-shadow: 0px 0px 4px 4px #a1a1a1;
+figure.image_frame .personal_image:hover {
+    box-shadow: 0px 0px 5px 5px #a1a1a1;
+}
+
+figure.personal_image:hover {
+    box-shadow: 0px 0px 5px 5px #a1a1a1;
 }
 
 figure.image_frame a{
     transform: 0.2s ease;
 }
 
-figure.image_frame a:hover{
+figure.image_frame a:hover {
     text-decoration: none;
+}
+
+div.col-md-3 a:hover { 
+    text-decoration: none;
+}
+
+p {
+    font-size: 100%;
+}
+
+section.bg-secondary a:hover {
+    text-decoration: none;
+}
+
+section.bg-secondary {
+    text-align: justify;
+}
+
+section.bg-secondary li {
+    padding-bottom: 20px;
+}
+
+.info {
+    width: 90px;
+}
+
+.BLAM {
+    font-size: 80%;
 }

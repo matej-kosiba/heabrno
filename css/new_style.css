@@ -1332,9 +1332,10 @@ nav ul:after {
 }
 
 .columns_layout .sidebar__list__item {
-    font-size: 15px;
+    font-size: 19px;
     text-decoration: none;
     line-height: 40px;
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
 }
 
 .columns_layout .sidebar__list__item.active a {
