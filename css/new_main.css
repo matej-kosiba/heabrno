@@ -91,7 +91,7 @@ aside {
 }
 
 .navbar-default {
-    background-color: black;
+    background-color: #24282d;
     border-color: rgba(34, 34, 34, 0.5);
     font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
     -webkit-transition: all 0.35s;
@@ -100,7 +100,7 @@ aside {
 }
 
 .navbar-default .navbar-header .navbar-brand {
-    color: white;
+    color: orange;
     font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
     font-weight: 700;
     text-transform: uppercase
